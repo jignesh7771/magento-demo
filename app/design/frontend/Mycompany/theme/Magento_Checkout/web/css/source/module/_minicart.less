@@ -194,10 +194,10 @@
                 }
 
                 .counter.qty {
-                    .lib-css(background, @active__color);
-                    .lib-css(color, @page__background-color);
-                    .lib-css(height, @minicart-qty__height);
-                    .lib-css(line-height, @minicart-qty__height);
+                    .lib-css(background, transparent);
+                    .lib-css(color, @color-black);
+                    .lib-css(height, auto);
+                    .lib-css(line-height, 1.2);
                     border-radius: 2px;
                     display: inline-block;
                     margin: 3px 0 0;
@@ -206,6 +206,11 @@
                     padding: 0 3px;
                     text-align: center;
                     white-space: normal;
+                    position: absolute;
+                    top: 0;
+                    font-family: @font-family-name__helvetica_regular;
+                    font-weight: 400;
+                    font-size: 10px;
 
                     &.empty {
                         display: none;
@@ -219,7 +224,7 @@
                 }
 
                 .counter-number {
-                    text-shadow: 0 0 7px rgba(0, 0, 0, 1);
+                    text-shadow: none;
                 }
 
                 .counter-label {
